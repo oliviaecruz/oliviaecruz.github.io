@@ -8,13 +8,12 @@ body {
 	font-size: 14px;
 	line-height: 1.3;
 	color: #444444;	
-	background-image: url("images/background-dots.png");
-    background-repeat: repeat;
 }
 
 header {
 	background-color: rgba(102, 48, 144, .25);
 	padding: 20px 0;
+	margin-bottom: 10px;
 }
 
 h2 {
@@ -28,7 +27,7 @@ h3 {
 }
 
 nav {
-	font-size: 18px
+	font-size: 18px;
 }
 
 nav a {
@@ -36,26 +35,34 @@ nav a {
 	margin-left: 10px;
 }
 
+section, main {
+	background-image: url("../images/background-dots.png");
+    background-repeat: repeat;
+}
+
 section {
 	padding: 20px 0;
 }
 
-section img {
+#welcome {
+	background-image: url("../images/hero-image.png");
 	background-size: cover;
 	width: 100%;
+	padding: 100px 0;
 }
 
 h1{
-	font-size: 70px;
+	font-size: 77px;
 	text-align: center;
 	line-height: 1;
+	color: rgba(102, 48, 144, .75);
 }
 
 #slogan {
 	font-style: italic;
 	text-align: center;
 	font-weight: lighter;
-	font-size: 33px;
+	font-size: 37px;
 	margin-bottom: 5px;
 }
 
@@ -85,7 +92,7 @@ aside {
 aside img{
 	width: 30px;
 	padding: 0;
-	margin-left:c 5px;
+	margin-left: 5px;
 }
 
 a {

@@ -3,6 +3,11 @@
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: rgb(102, 48, 144)
+}
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -12,15 +17,23 @@ body {
 
 header {
 	background-color: rgba(102, 48, 144, .25);
-	padding: 20px 0;
-	margin-bottom: 10px;
+	padding: 10px 0;
+	line-height: 1.2;
 }
 
-h2 {
-	font-size: 45px;
+header img {
+	width: 325px;
 }
 
-h3 {
+#name {
+	font-size: 55px;
+	font-family: 'Antic Slab', serif;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: #FFFFFF;	
+}
+
+#job {
 	font-size: 20px;
 	font-style: italic;
 	font-weight: lighter;
@@ -28,6 +41,7 @@ h3 {
 
 nav {
 	font-size: 18px;
+	font-family: 'Antic Slab', serif;
 }
 
 nav a {
@@ -44,11 +58,18 @@ section {
 	padding: 20px 0;
 }
 
+.clear:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
 #welcome {
 	background-image: url("../images/hero-image.png");
 	background-size: cover;
 	width: 100%;
 	padding: 100px 0;
+	margin-top: 10px;
 }
 
 h1{
@@ -82,7 +103,7 @@ main img{
 footer {
 	background-color: rgba(102, 48, 144, .25);
 	font-size: 12px;
-	padding: 20px 0;
+	padding: 15px 0;
 }
 
 aside {
@@ -91,11 +112,6 @@ aside {
 
 aside img{
 	width: 30px;
-	padding: 0;
-	margin-left: 5px;
-}
-
-a {
-	text-decoration: none;
-	color: rgb(102, 48, 144)
+	margin-right: 5px;
+	margin-bottom: 5px;
 }

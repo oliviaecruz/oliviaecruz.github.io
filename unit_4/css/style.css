@@ -12,10 +12,6 @@ body {
 	color: #444;
 }
 
-header {
-	margin-bottom: 0;
-}
-
 header img {
 	width: 350px;
 }
@@ -78,6 +74,16 @@ ul {
 	content:"";
 	display: block;
 	clear: both;
+}
+
+.about {
+	width: 28em;
+	margin: 0 auto;
+}
+
+.columns {
+	column-count: 2;
+	list-style-type: none;
 }
 
 #welcome {

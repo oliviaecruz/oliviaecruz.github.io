@@ -1,0 +1,193 @@
+@import 'https://fonts.googleapis.com/css?family=Antic+Slab';
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #444;
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+header img {
+	width: 350px;
+}
+
+nav {
+	font-size: 1.2em;
+	font-family: 'Antic Slab', Helvetica, Arial, sans-serif;
+	margin-top: -6.6em;
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+nav a {
+	margin: 5px 10px 0;
+}
+
+main, section {
+	background-image: url("../images/background-dots.png");
+    background-repeat: repeat;
+}
+
+main {
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+footer {
+	/*background-color: rgba(102, 48, 144, .25);*/
+	font-size: .8em;
+	/*padding: 15px 10px;*/
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+aside {
+	float: right;
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+aside img{
+	width: 30px;
+	margin: 0 5px 5px 0;
+}
+
+main {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+div, section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+p {	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(102, 48, 144);
+}
+
+a:hover {
+	color: inherit;
+}
+
+ul {
+	padding-left: 25px;
+}
+
+.clear:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.about {
+	width: 50%;
+	padding: 0 50px;
+	float: left;
+}
+
+.columns {
+	column-count: 2;
+	list-style-type: none;
+}
+
+.projecttile {
+	position: relative;
+	width: 33.33%;
+	padding: 10px;
+	float: left;
+}
+
+.projecttile .interior {
+	position: relative;
+}
+
+.projecttile img {
+	display: block;
+	width: 100%;
+}
+
+.projectinfo {
+	position: absolute;
+	padding: 1em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+.projecttile:hover .projectinfo {
+	opacity: 1;
+}
+
+.projectinfo h4 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #FFF;
+	font-size: 1.2em;
+}
+
+#wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#welcome {
+	background-image: url("../images/hero-image.png");
+	background-size: cover;
+	width: 100%;
+	padding: 100px 0;
+}
+
+#title{
+	font-size: 5.2em;
+	text-align: center;
+	line-height: 1;
+	color: rgba(102, 48, 144, .75);
+}
+
+#subhead {
+	font-family: 'Antic Slab', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 2em;
+	letter-spacing: .1em;
+}
+
+#projects {
+	padding: 20px 0;
+	border-top: 1px solid #666;
+}

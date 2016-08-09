@@ -53,7 +53,7 @@ aside {
 	float: right;
 }
 
-aside img{
+aside img, .description img{
 	width: 2.25em;
 	margin: 0 .37em .37em 0;
 }
@@ -83,7 +83,7 @@ li {
 
 hr {
 	border-top: 1px solid #666;
-	max-width: 1100px;
+	max-width: 1120px;
 	margin: auto;
 }
 
@@ -107,7 +107,29 @@ hr {
 
 .columns {
 	column-count: 2;
+}
+
+.columns li {
 	list-style-type: none;
+	background-color: rgba(102, 48, 144, .75);
+	text-align: center;
+	width: 75%;
+	margin: 0.25em;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+.columns li:hover {
+	background-color: inherit;
+}
+
+.columns a {
+	color: white;
+	display: block;
+}
+
+.columns a:hover {
+	color: rgb(102, 48, 144);
 }
 
 .description {
@@ -164,7 +186,7 @@ hr {
 	transition: all .25s ease-in-out;
 }
 
-.projecttile:hover .projectinfo {
+.projecttile:hover .projectinfo, .projecttile:active .projectinfo {
 	opacity: 1;
 }
 
@@ -195,6 +217,7 @@ hr {
 
 #title{
 	font-size: 5.2em;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 1;
@@ -211,8 +234,29 @@ hr {
 	letter-spacing: .1em;
 }
 
+#submit {
+	list-style-type: none;
+	background-color: rgba(102, 48, 144, .75);
+	color: #000;
+	text-align: center;
+	width: 25%;
+	margin: 0.25em;
+	padding: 0.5em;
+	display: inline-block;
+}
+
 #projects {
 	padding: 20px 0;
+}
+
+@media screen and (min-width: 1500px) {
+	.wrapper {
+		max-width: 1440px;
+	}
+
+	hr {
+		max-width: 1460px;
+	}
 }
 
 @media screen and (max-width: 950px) {
@@ -233,11 +277,16 @@ hr {
 	}
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 680px) {
 	.about {
 		width: 100%;
 	}
+	.about + .about {
+		margin-top: 1em;
+	}
+}
 
+@media screen and (max-width: 615px) {
 	#desktop {
 		display: none;
 	}
@@ -248,10 +297,6 @@ hr {
 
 	#welcome {
 		padding: 80px 0;
-	}
-
-	.about + .about {
-		margin-top: 1em;
 	}
 	
 	nav {

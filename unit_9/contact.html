@@ -4,6 +4,7 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="favicon.png">
 		<title>Olivia Cruz Design</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -49,28 +50,40 @@
 
 			<div class="wrapper">
 				<div class="images">
-					<form action="mailto:olivia.cruz890@gmail.com" enctype="text/plain" method="post">
-						<p>Name:<br>
-						<input name="Name" type="text" id="Name" size="40"></p>
-						<p>E-mail:<br>
-						<input name="E-mail" type="text" id="E-mail" size="40"></p>
-						<p>Subject:<br>
-						<input name="Subject" type="text" id="Subject" size="40"></p>
-						<p>Message:<br>
-						<textarea name="Comment" cols="55" rows="5" id="Comment"></textarea></p>
-						<p><input type="submit" name="Submit" value="Submit" id="submit"></p>
+					<form name="htmlform" method="post" action="html_form_send.php">
+						<table>
+							<tr>
+								<td valign="top">
+									<label for="first_name">Name</label>
+								<br>
+									<input  type="text" name="first_name">
+								</td>
+							</tr>
+
+							<tr>
+								<td valign="top">
+									<label for="email">Email Address</label>
+									<br>
+									<input  type="text" name="email">
+								</td> 
+							</tr>
+
+							<tr>
+								<td valign="top">
+									<label for="comments">Comments</label>
+									<br>
+									<textarea  name="comments" rows="6"></textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<input type="submit" value="Submit" class="button">   
+									<!--( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )-->
+								</td>
+							</tr>
+						</table>
 					</form>
-					<!-- Do not change the code! -->
-					<a id="foxyform_embed_link_804413" href="http://www.foxyform.com/">foxyform</a>
-					<script type="text/javascript">
-					(function(d, t){
-					   var g = d.createElement(t),
-					       s = d.getElementsByTagName(t)[0];
-					   g.src = "http://www.foxyform.com/js.php?id=804413&sec_hash=34ef73b9400&width=350px";
-					   s.parentNode.insertBefore(g, s);
-					}(document, "script"));
-					</script>
-					<!-- Do not change the code! -->
 			    </div>
 			</div>
 		</main>

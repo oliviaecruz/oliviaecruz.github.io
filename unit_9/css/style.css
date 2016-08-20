@@ -95,12 +95,22 @@ hr {
 	margin: auto;
 }
 
-iframe {
+table {
 	width: 100%;
 }
 
-iframe body {
-	background-color: transparent;
+td {
+	padding-bottom: .5em;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	padding: .5em;
+}
+
+label {
+	color: rgb(102, 48, 144);
+	font-size: 1em;
 }
 
 .clear:after {
@@ -127,7 +137,9 @@ iframe body {
 	background-color: rgba(102, 48, 144, .75);
 	display: inline-block;
 	font-family: 'Antic Slab', Helvetica, Arial, sans-serif;
+	font-size: 1em;
 	text-align: center;
+	border: none;
 	width: 46%;
 	margin: .25em;
 	padding: 0.5em;
